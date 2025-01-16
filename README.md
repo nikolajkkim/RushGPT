@@ -1,4 +1,3 @@
-WORK IN PROGRESS READ ME
+# RushGPT
+Transcription, NLP, TTS
 
-For TTS
-Run TTS/piper_speak.py "example text to be read out loud by piper"
