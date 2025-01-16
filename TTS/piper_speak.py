@@ -1,8 +1,17 @@
 import subprocess
 import sys
+import os
 
 def text_to_speech(text):
-    command = ['./piper/piper', '--model', 'en_US-amy-medium.onnx', '--output-raw' ]
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    piper_path = os.path.join(script_dir, 'piper', 'piper')
+
+    if not os.path.isfile(piper_path):
+        print(f"Error: The piper executable was not found at {piper_path}")
+        return
+    
+    command = [piper_path, '--model', 'en_US-amy-medium.onnx', '--output-raw' ]
     
     process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     
