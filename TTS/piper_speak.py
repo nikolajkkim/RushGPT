@@ -4,14 +4,18 @@ import os
 
 def text_to_speech(text):
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    
+
     piper_path = os.path.join(script_dir, 'piper', 'piper')
+    model_path = os.path.join(script_dir, 'en_US-amy-medium.onnx')
 
     if not os.path.isfile(piper_path):
         print(f"Error: The piper executable was not found at {piper_path}")
         return
+    if not os.path.isfile(model_path):
+        print(f"Error: The model file executable was not found at {model_path}")
+        return
     
-    command = [piper_path, '--model', 'en_US-amy-medium.onnx', '--output-raw' ]
+    command = [piper_path, '--model', model_path , '--output-raw' ]
     
     process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     
