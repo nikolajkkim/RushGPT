@@ -1,0 +1,124 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: theta_tau_general_info
+  examples: |
+    - "What do you guys do?"
+    - "What is Theta Tau?"
+    - "What's the mission of Theta Tau?"
+    - "What is your fraternity about?"
+    - "What is Theta Tau about?"
+
+- intent: rush_week_general_info
+  examples: |
+    - "Where is rush week?"
+    - "What is rush"
+    - "What events do you have?"
+    - "What events will there be?"
+
+- intent: rush_week_timing
+  examples: |
+    - "When is rush week?"
+    - "When is rush?"
+    - "What time is rush?"
+    - "What time is the event?"
+    - "What time does rush end?"
+    - "What time does the event end?"
+
+- intent: rush_week_location
+  examples: |
+    - "Where is rush week?"
+    - "Where is rush?"
+    - "Where is the event?"
+    - "What time does rush end?"
+    - "What time does the event end?"
+

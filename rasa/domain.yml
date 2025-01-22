@@ -1,0 +1,62 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - theta_tau_general_info
+  - rush_week_general_info
+  - rush_week_timing
+  - rush_week_location
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_theta_tau_general_info:
+    - text: "Theta Tau is the premier professional engineering fraternity. Our three pillars are brotherhood, professionalism, and service. "
+    - text: "We're a professional fraternity that helps students develop leadership skills, connect with fellow engineers, and create lasting friendships."
+    - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of service, professionalism, and brotherhood."
+    - text: "We're just a big group of friends that develop each other professionally."
+
+  utter_rush_week_general_info:
+    - text: "Rush Week is a time when people come out to meet our brothers and learn more about Theta Tau. We have an information session, a fun engineering challenge, and a professional development night. "
+    - text: "Rush Week is our recruitment period, where you can attend events, ask questions, and see if Theta Tau is the right fit for you."
+    - text: "During Rush Week, we'll host various events for you to meet us, learn about our values, and see what it's like to be part of Theta Tau."
+
+  utter_rush_week_timing:
+    - text: "Rush Week starts on week 1 spring quarter. Events usually begin at 5pm, and some might go into the evening."
+    - text: "Our Rush Week starts on 1/2/2999. Events will take place throughout the week, typically starting around 5pm and finishing by 7pm."
+    - text: "Rush Week runs from 1/2/9999 to 1/5/9999"
+
+  utter_rush_week_location:
+    - text: "Rush Week events will be held ics 259, mdea, and eh. Come by and check out the fun!"
+    - text: "All Rush Week activities will take place at Outer Ring Road, UCI. It's going to be an exciting week!"
+    - text: "Our events for Rush Week will be happening at Outer Ring Road at UCI. Feel free to swing by anytime!"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
