@@ -33,10 +33,10 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: theta_tau_general_info
-  - action: utter_theta_tau_general_info
-  - intent: rush_week_general_info
-  - action: utter_rush_week_general_info
+  - intent: general_info_about_theta_tau
+  - action: utter_general_info_about_theta_tau
+  - intent: general_info_about_rush_week
+  - action: utter_general_info_about_rush_week
   - intent: rush_week_timing
   - action: utter_rush_week_timing
   - intent: rush_week_location

@@ -11,3 +11,25 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Introduce theta tau
+  steps:
+  - intent: general_info_about_theta_tau
+  - action: utter_general_info_about_theta_tau
+
+- rule: Introduce rush week
+  steps:
+  - intent: general_info_about_rush_week
+  - action: utter_general_info_about_rush_week
+
+- rule: Explain timing of rush week
+  steps:
+  - intent: rush_week_timing
+  - action: utter_rush_week_timing
+
+- rule: Explain location of rush week
+  steps:
+  - intent: rush_week_location
+  - action: utter_rush_week_location
+
+

@@ -8,8 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - theta_tau_general_info
-  - rush_week_general_info
+  - general_info_about_theta_tau
+  - general_info_about_rush_week
   - rush_week_timing
   - rush_week_location
 
@@ -33,13 +33,13 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_theta_tau_general_info:
+  utter_general_info_about_theta_tau:
     - text: "Theta Tau is the premier professional engineering fraternity. Our three pillars are brotherhood, professionalism, and service. "
     - text: "We're a professional fraternity that helps students develop leadership skills, connect with fellow engineers, and create lasting friendships."
     - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of service, professionalism, and brotherhood."
     - text: "We're just a big group of friends that develop each other professionally."
 
-  utter_rush_week_general_info:
+  utter_general_info_about_rush_week:
     - text: "Rush Week is a time when people come out to meet our brothers and learn more about Theta Tau. We have an information session, a fun engineering challenge, and a professional development night. "
     - text: "Rush Week is our recruitment period, where you can attend events, ask questions, and see if Theta Tau is the right fit for you."
     - text: "During Rush Week, we'll host various events for you to meet us, learn about our values, and see what it's like to be part of Theta Tau."
