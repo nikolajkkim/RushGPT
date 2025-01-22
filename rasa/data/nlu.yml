@@ -90,7 +90,7 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: theta_tau_general_info
+- intent: general_info_about_theta_tau
   examples: |
     - "What do you guys do?"
     - "What is Theta Tau?"
@@ -98,9 +98,8 @@ nlu:
     - "What is your fraternity about?"
     - "What is Theta Tau about?"
 
-- intent: rush_week_general_info
+- intent: general_info_about_rush_week
   examples: |
-    - "Where is rush week?"
     - "What is rush"
     - "What events do you have?"
     - "What events will there be?"
@@ -119,6 +118,4 @@ nlu:
     - "Where is rush week?"
     - "Where is rush?"
     - "Where is the event?"
-    - "What time does rush end?"
-    - "What time does the event end?"
 
