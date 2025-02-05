@@ -1,0 +1,10 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet_response",
+    "eJyFjNEJgDAMBVfJAE7QVURCkYcUNC1J6k/p7hb1V/y7g+Pm1idqRXFyXD1lCdQeYIkHAr2yJ3PIaKtBR5NkqAfaFPD+86juUL5TVljJYvhcLRc6vjhl": "utter_do_you_want_to_learn",
+    "eJyljkEKgDAMBL/SB/iCfkUkFF2koImkqSLFv1vUq3jwtgPDsG05GlcWxUqhtyjsXbkHcZjh3QNTTAaubk7Q6kSuaN6NCtjx0chmULpUUqRFOOFXahDaJdMW2MiEJgR9/9adD91Xuw==": "action_listen",
+    "eJylj1EKgzAQRK+SA/QEuUqRZbFjCeiubDaWEnL3BvVfqH8z8HjMPGt7hLoaNuLRk0oM9QgkvCCGs8wpO6SzJcM6k6RXj+FtgLcLR3GH0Y6SIa8qGbdUL6WvFvqwOLnSDLZ/t13842lKtrQ2/ABC/HHt": "utter_general_info_about_theta_tau",
+    "eJylj1EKAjEMRK/SA3iCXkUkRJ1qoZssaapI2btbVn9lRf9m4PGY2fdlF/psuBGfPKvE0F+BhCfE8C4lV4cMtlXYYLKM6jFcDPBlw9HcYbSiZKizSsVfqrPSQxvdWZxcqYDt120b/zilbNOXByEwLpQlKfFR2xh3hTM5t8/mwxN7EpTH": "action_listen"
+  }
+}

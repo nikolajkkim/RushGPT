@@ -8,14 +8,11 @@ nlu:
     - hi
     - hello there
     - good morning
-    - good evening
-    - moin
     - hey there
-    - let's go
     - hey dude
     - goodmorning
-    - goodevening
     - good afternoon
+    - hi, my name is [nikolaj](name)
 
 - intent: goodbye
   examples: |
@@ -49,40 +46,6 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -98,24 +61,69 @@ nlu:
     - "What is your fraternity about?"
     - "What is Theta Tau about?"
 
-- intent: general_info_about_rush_week
-  examples: |
-    - "What is rush"
-    - "What events do you have?"
-    - "What events will there be?"
+# - intent: wants_to_know_more_about_theta_tau
+#   examples: |
+#     - "Can you tell me more about theta tau?"
+#     - "What are some of the pillars?"
+#     - "Tell me more about the pillars"
 
-- intent: rush_week_timing
-  examples: |
-    - "When is rush week?"
-    - "When is rush?"
-    - "What time is rush?"
-    - "What time is the event?"
-    - "What time does rush end?"
-    - "What time does the event end?"
+# - intent: general_info_about_rush_week
+#   examples: |
+#     - "What is rush"
+#     - "What events do you have?"
+#     - "What events will there be?"
 
-- intent: rush_week_location
-  examples: |
-    - "Where is rush week?"
-    - "Where is rush?"
-    - "Where is the event?"
+# - intent: rush_week_timing
+#   examples: |
+#     - "When is rush week?"
+#     - "When is rush?"
+#     - "What time is rush?"
+#     - "What time is the event?"
+#     - "What time does rush end?"
+#     - "What time does the event end?"
+
+# - intent: rush_week_location
+#   examples: |
+#     - "Where is rush week?"
+#     - "Where is rush?"
+#     - "Where is the event?"
+
+# - intent: info_about_brotherhood
+#   examples: |
+#     - "Can you tell me more about brotherhood?"
+#     - "What do you guys do socially?"
+#     - "What does brotherhood mean to you guys?"
+#     - "What do the brothers do together?"
+#     - "What do you guys do for fun?"
+
+# - intent: info_about_professionalism
+#   examples: |
+#     - "Can you tell me more about professionalism?"
+#     - "What do you guys do professionally?
+#     - "Do you guys get internships?"
+#     - "Tell me about the professional pillar"
+#     - "Are you guys super professional?"
+
+# - intent: info_about_service
+#   examples: |
+#     - "Can you tell me more about service?"
+#     - "What do you guys do for service?
+#     - "Do you guys do service events"
+#     - "Tell me about the service pillar"
+#     - "Do you guys do like beach clean ups and stuff?"
+#     - "How do you guys give back to the community?"
+#     - "How do you guys help the community?"
+
+# - intent: shares_major
+#   examples: |
+#     - [Computer Science](user_major)
+#     - [Electrical Engineering](user_major)
+#     - [Mechanical Engineering](user_major)
+#     - [Civil Engineering](user_major)
+#     - [Data Science](user_major)
+#     - [Engineering](user_major)
+#     - I'm studying [Electrical Engineering](user_major)
+#     - My major is [Mechanical Engineering](user_major)
+#     - I'm a [Computer Science](user_major) major
+#     - I study [Computer Science](user_major) 
 

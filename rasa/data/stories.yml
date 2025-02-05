@@ -1,43 +1,50 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: intro information of tt
   steps:
   - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_greet_response
   - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: potential rushee
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: general_info_about_theta_tau
   - action: utter_general_info_about_theta_tau
-  - intent: general_info_about_rush_week
-  - action: utter_general_info_about_rush_week
-  - intent: rush_week_timing
-  - action: utter_rush_week_timing
-  - intent: rush_week_location
-  - action: utter_rush_week_location
+
+
+# - story: very general information about tt
+#   steps:
+#   - intent: greet
+#   - action: utter_greet_response
+#   - intent: general_info_about_theta_tau
+#   - action: utter_general_info_about_theta_tau
+#   - intent: general_info_about_rush_week
+#   - action: utter_general_info_about_rush_week
+#   - intent: rush_week_timing
+#   - action: utter_rush_week_timing
+#   - intent: rush_week_location
+#   - action: utter_rush_week_location
+
+# - story: user wants to know more about brotherhood
+#   steps:
+#   - intent: greet
+#   - action: utter_greet_response
+#   - intent: affirm
+#   - action: utter_ask_user_major
+#   - action: major_form
+  
+#   - active_loop: major_form
+#   - slot_was_set:
+#     - requested_slot: user_major
+#   - intent: shares_major
+#   - slot_was_set:
+#     - user_major: "Computer Science"
+#   - action: action_submit_major_form  # Submit the form
+#   - active_loop: null  # End the form's active loop
+
+#   - action: action_validate_major  # Now execute the custom action
+  
+  
+#   - intent: general_info_about_theta_tau
+#   - action: utter_general_info_about_theta_tau
+#   - intent: wants_to_know_more_about_theta_tau
+#   - action: utter_options_for_more_info
+#   - intent: info_about_brotherhood
+#   - action: utter_info_about_brotherhood

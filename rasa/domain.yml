@@ -5,30 +5,52 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
   - general_info_about_theta_tau
-  - general_info_about_rush_week
-  - rush_week_timing
-  - rush_week_location
+
+entities:
+  - name
+  - user_major
+
+synonyms:
+  - synonym: "Theta Tau"
+    examples:
+      - "TT"
+      - "theta tau"
+      - "the fraternity"
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings: 
+      - type: from_entity
+        entity: name
+
+  user_major:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: user_major
+
+# forms:
+#   major_form:
+#     required_slots:
+#       - user_major
+
+# actions:
+#   - action_validate_major
+#   - action_submit_major_form
+
+
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_greet_response:
+  - text: "Hey {name}! Would you like to learn about Theta Tau?"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
@@ -39,21 +61,53 @@ responses:
     - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of service, professionalism, and brotherhood."
     - text: "We're just a big group of friends that develop each other professionally."
 
-  utter_general_info_about_rush_week:
-    - text: "Rush Week is a time when people come out to meet our brothers and learn more about Theta Tau. We have an information session, a fun engineering challenge, and a professional development night. "
-    - text: "Rush Week is our recruitment period, where you can attend events, ask questions, and see if Theta Tau is the right fit for you."
-    - text: "During Rush Week, we'll host various events for you to meet us, learn about our values, and see what it's like to be part of Theta Tau."
+  # utter_general_info_about_rush_week:
+  #   - text: "Rush Week is a time when people come out to meet our brothers and learn more about Theta Tau. We have an information session, a fun engineering challenge, and a professional development night. "
+  #   - text: "Rush Week is our recruitment period, where you can attend events, ask questions, and see if Theta Tau is the right fit for you."
+  #   - text: "During Rush Week, we'll host various events for you to meet us, learn about our values, and see what it's like to be part of Theta Tau."
 
-  utter_rush_week_timing:
-    - text: "Rush Week starts on week 1 spring quarter. Events usually begin at 5pm, and some might go into the evening."
-    - text: "Our Rush Week starts on 1/2/2999. Events will take place throughout the week, typically starting around 5pm and finishing by 7pm."
-    - text: "Rush Week runs from 1/2/9999 to 1/5/9999"
+  # utter_rush_week_timing:
+  #   - text: "Rush Week starts on week 1 spring quarter. Events usually begin at 5pm, and some might go into the evening."
+  #   - text: "Our Rush Week starts on 1/2/2999. Events will take place throughout the week, typically starting around 5pm and finishing by 7pm."
+  #   - text: "Rush Week runs from 1/2/9999 to 1/5/9999"
 
-  utter_rush_week_location:
-    - text: "Rush Week events will be held ics 259, mdea, and eh. Come by and check out the fun!"
-    - text: "All Rush Week activities will take place at Outer Ring Road, UCI. It's going to be an exciting week!"
-    - text: "Our events for Rush Week will be happening at Outer Ring Road at UCI. Feel free to swing by anytime!"
+  # utter_rush_week_location:
+  #   - text: "Rush Week events will be held ics 259, mdea, and eh. Come by and check out the fun!"
+  #   - text: "All Rush Week activities will take place at Outer Ring Road, UCI. It's going to be an exciting week!"
+  #   - text: "Our events for Rush Week will be happening at Outer Ring Road at UCI. Feel free to swing by anytime!"
 
+  # utter_info_about_brotherhood:
+  #   - text: "Our chapter takes pride in the close bond between our brothers. From seasonal retreats and mixers to regionals with brothers from all 
+  #   over the state and nation, we make sure to take time to relax and connect with each other"
+  #   - text: "Our brothers love spending time with each other. Every day there is some group of brothers just hanging out or studying together."
+  #   - text: "We really bond with each other and do all kinds of fun things. It's everything from big official events like retreat or mixers 
+  #   with other chapters or clubs, to little things like study sessions, a fruit party, or ice skating."
+
+  # utter_info_about_professionalism:
+  #   - text: "We hope to help our brothers develop into engineers with strong communication, problem-solving, and leadership skills that 
+  #   we demonstrate in our work and our community. Whether building up professional basics or guiding each other through the job hunt, 
+  #   our chapter is a community of like-minded individuals preparing each other for the professional world."
+  #   - text: "We really thrive on helping each other grow. By always working to improve on our skills and surrounding ourselves with like minded, 
+  #   talented individuals, we are able to develop in all kinds of areas."
+  #   - text: "We love helping each other develop professionally. This is done through all kinds of ways which includes resume, linkedin, or mock
+  #   interview workshops that we host within our club. Another thing we enjoy doing is preparing for career fair days together, making sure we are all
+  #   ready to go the next day."
+
+  # utter_info_about_service:
+  #   - text: "We believe that giving back to the community is an integral part of becoming well rounded people. From taking on a rich array of
+  #    community service projects or using our lessons learned to guide the next generation of students interested in STEM, we're always 
+  #    looking for a way to give back to the community."
+  #   - text: "We are very committed to giving back to the community. This includes things like gardening events, beach clean ups, volunteering 
+  #   at the food pantry, and more. One highlight event that we always love doing is our high school outreach event. This is when we visit a high school 
+  #   oftentimes with limited exposure to STEM and speak with students who may have an interest in the field. It's a really exciting event where we can 
+  #   help new and aspiring students to feel excited about the thigns that we study."
+
+  # utter_options_for_more_info:
+  #   - text: "I would be happy to tell you more about Theta Tau. Please choose a pillar you would like to learn more about. Brotherhood, 
+  #   Professionalism, or Service. "
+
+  # utter_ask_user_major:
+  #   - text: "Can I ask what you major is?"
 
 
 

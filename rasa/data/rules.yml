@@ -7,6 +7,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: return a greeting if greeted
+  steps:
+  - intent: greet
+  - action: utter_greet_response
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
@@ -17,19 +22,38 @@ rules:
   - intent: general_info_about_theta_tau
   - action: utter_general_info_about_theta_tau
 
-- rule: Introduce rush week
-  steps:
-  - intent: general_info_about_rush_week
-  - action: utter_general_info_about_rush_week
+# - rule: Introduce rush week
+#   steps:
+#   - intent: general_info_about_rush_week
+#   - action: utter_general_info_about_rush_week
 
-- rule: Explain timing of rush week
-  steps:
-  - intent: rush_week_timing
-  - action: utter_rush_week_timing
+# - rule: Explain timing of rush week
+#   steps:
+#   - intent: rush_week_timing
+#   - action: utter_rush_week_timing
 
-- rule: Explain location of rush week
-  steps:
-  - intent: rush_week_location
-  - action: utter_rush_week_location
+# - rule: Explain location of rush week
+#   steps:
+#   - intent: rush_week_location
+#   - action: utter_rush_week_location
 
+# - rule: Give more info on brotherhood
+#   steps:
+#   - intent: info_about_brotherhood
+#   - action: utter_info_about_brotherhood
+  
+# - rule: Give more info on professionalism
+#   steps:
+#   - intent: info_about_professionalism
+#   - action: utter_info_about_professionalism
+
+# - rule: Give more info on service
+#   steps:
+#   - intent: info_about_service
+#   - action: utter_info_about_service
+
+# - rule: choose a pillar to learn more about
+#   steps:
+#   - intent: wants_to_know_more_about_theta_tau
+#   - action: utter_options_for_more_info
 

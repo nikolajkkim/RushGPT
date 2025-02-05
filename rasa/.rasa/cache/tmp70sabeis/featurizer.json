@@ -1,0 +1,77 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "back": 1,
+        "bot_challenge": 2,
+        "deny": 3,
+        "general_info_about_rush_week": 4,
+        "general_info_about_theta_tau": 5,
+        "goodbye": 6,
+        "greet": 7,
+        "info_about_brotherhood": 8,
+        "info_about_professionalism": 9,
+        "info_about_service": 10,
+        "mood_great": 11,
+        "mood_unhappy": 12,
+        "nlu_fallback": 13,
+        "out_of_scope": 14,
+        "restart": 15,
+        "rush_week_location": 16,
+        "rush_week_timing": 17,
+        "session_start": 18,
+        "shares_major": 19,
+        "wants_to_know_more_about_theta_tau": 20
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_validate_major": 13,
+        "action_submit_major_form": 14,
+        "utter_ask_user_major": 15,
+        "utter_cheer_up": 16,
+        "utter_did_that_help": 17,
+        "utter_general_info_about_rush_week": 18,
+        "utter_general_info_about_theta_tau": 19,
+        "utter_goodbye": 20,
+        "utter_greet": 21,
+        "utter_greet_response": 22,
+        "utter_happy": 23,
+        "utter_iamabot": 24,
+        "utter_info_about_brotherhood": 25,
+        "utter_info_about_professionalism": 26,
+        "utter_info_about_service": 27,
+        "utter_options_for_more_info": 28,
+        "utter_rush_week_location": 29,
+        "utter_rush_week_timing": 30,
+        "major_form": 31
+      },
+      "entities": {
+        "user_major": 0
+      },
+      "slots": {
+        "user_major_0": 0
+      },
+      "active_loop": {
+        "major_form": 0
+      }
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
