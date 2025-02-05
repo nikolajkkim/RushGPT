@@ -7,6 +7,8 @@ intents:
   - deny
   - bot_challenge
   - general_info_about_theta_tau
+  - info_about_brotherhood
+  - info_about_professionalism
 
 entities:
   - name
@@ -56,10 +58,22 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_general_info_about_theta_tau:
-    - text: "Theta Tau is the premier professional engineering fraternity. Our three pillars are brotherhood, professionalism, and service. "
-    - text: "We're a professional fraternity that helps students develop leadership skills, connect with fellow engineers, and create lasting friendships."
-    - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of service, professionalism, and brotherhood."
-    - text: "We're just a big group of friends that develop each other professionally."
+    - text: "Theta Tau is the premier professional engineering fraternity at UCI. 
+    Our three pillars are brotherhood, professionalism, and service. I would be happy to tell you more
+     about Theta Tau. If you would like, please ask to learn more about one of our pillars: Brotherhood, 
+    Professionalism, or Service."
+    - text: "We're a professional fraternity that helps students develop leadership skills, connect 
+    with fellow engineers, and create long lasting friendships. I would be happy to tell you more
+     about Theta Tau. If you would like, please ask to learn more about one of our pillars: Brotherhood, 
+    Professionalism, or Service."
+    - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of 
+    service, professionalism, and brotherhood. I would be happy to tell you more
+     about Theta Tau. If you would like, please ask to learn more about one of our pillars: Brotherhood, 
+    Professionalism, or Service."
+
+  utter_options_for_more_info:
+    - text: "Would you like to learn anything else about Theta Tau? I can talk to you about brotherhood, 
+    professionalism, service, or even rush week. "
 
   # utter_general_info_about_rush_week:
   #   - text: "Rush Week is a time when people come out to meet our brothers and learn more about Theta Tau. We have an information session, a fun engineering challenge, and a professional development night. "
@@ -76,22 +90,22 @@ responses:
   #   - text: "All Rush Week activities will take place at Outer Ring Road, UCI. It's going to be an exciting week!"
   #   - text: "Our events for Rush Week will be happening at Outer Ring Road at UCI. Feel free to swing by anytime!"
 
-  # utter_info_about_brotherhood:
-  #   - text: "Our chapter takes pride in the close bond between our brothers. From seasonal retreats and mixers to regionals with brothers from all 
-  #   over the state and nation, we make sure to take time to relax and connect with each other"
-  #   - text: "Our brothers love spending time with each other. Every day there is some group of brothers just hanging out or studying together."
-  #   - text: "We really bond with each other and do all kinds of fun things. It's everything from big official events like retreat or mixers 
-  #   with other chapters or clubs, to little things like study sessions, a fruit party, or ice skating."
+  utter_info_about_brotherhood:
+    - text: "Our chapter takes pride in the close bond between our brothers. From seasonal retreats and mixers to regionals with brothers from all 
+    over the state and nation, we make sure to take time to relax and connect with each other."
+    - text: "Our brothers love spending time with each other. Every day there is some group of brothers just hanging out or studying together."
+    - text: "We really bond with each other and do all kinds of fun things. It's everything from big official events like retreat or mixers 
+    with other chapters or clubs, to little things like study sessions, sports days, or cookouts."
 
-  # utter_info_about_professionalism:
-  #   - text: "We hope to help our brothers develop into engineers with strong communication, problem-solving, and leadership skills that 
-  #   we demonstrate in our work and our community. Whether building up professional basics or guiding each other through the job hunt, 
-  #   our chapter is a community of like-minded individuals preparing each other for the professional world."
-  #   - text: "We really thrive on helping each other grow. By always working to improve on our skills and surrounding ourselves with like minded, 
-  #   talented individuals, we are able to develop in all kinds of areas."
-  #   - text: "We love helping each other develop professionally. This is done through all kinds of ways which includes resume, linkedin, or mock
-  #   interview workshops that we host within our club. Another thing we enjoy doing is preparing for career fair days together, making sure we are all
-  #   ready to go the next day."
+  utter_info_about_professionalism:
+    - text: "We hope to help our brothers develop into engineers with strong communication, problem-solving, and leadership skills that 
+    we demonstrate in our work and our community. Whether building up professional basics or guiding each other through the job hunt, 
+    our chapter is a community of like-minded individuals preparing each other for the professional world."
+    - text: "We really thrive on helping each other grow. By always working to improve on our skills and surrounding ourselves with like minded, 
+    talented individuals, we are able to develop in all kinds of areas."
+    - text: "We love helping each other develop professionally. This is done through all kinds of ways which includes resume, linkedin, or mock
+    interview workshops that we host within our club. Another thing we enjoy doing is preparing for career fair days together, making sure we are all
+    ready to go the next day."
 
   # utter_info_about_service:
   #   - text: "We believe that giving back to the community is an integral part of becoming well rounded people. From taking on a rich array of
@@ -102,9 +116,7 @@ responses:
   #   oftentimes with limited exposure to STEM and speak with students who may have an interest in the field. It's a really exciting event where we can 
   #   help new and aspiring students to feel excited about the thigns that we study."
 
-  # utter_options_for_more_info:
-  #   - text: "I would be happy to tell you more about Theta Tau. Please choose a pillar you would like to learn more about. Brotherhood, 
-  #   Professionalism, or Service. "
+
 
   # utter_ask_user_major:
   #   - text: "Can I ask what you major is?"

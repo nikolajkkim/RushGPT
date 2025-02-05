@@ -1,0 +1,15 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet_response",
+    "eJyFjNEJgDAMBVfJAE7QVURCkYcUNC1J6k/p7hb1V/y7g+Pm1idqRXFyXD1lCdQeYIkHAr2yJ3PIaKtBR5NkqAfaFPD+86juUL5TVljJYvhcLRc6vjhl": "action_listen",
+    "eJydjlEKgCAQBa/iATqBV4kQiWcIucq69iN796T6F/p7A8Pw1q6L6YVxOb9LzGRNf4cjn2DNB2esAhpuq+DhRBoo1hwMiE4aTQTsHtUxaslU8TM1ueNDiJxUtxv7KFKX": "utter_general_info_about_theta_tau",
+    "eJydjlEKwjAQRK+SA/QEuYqUZZWJBtpN2Uz8Cb27Qf0tFf/mweMxl75PoW+Op+iNuVgM/TPEdEUMX1hyJWy4rcKHk20gY7g7wP2k0Ui4vFVx1K1YxZ+pkzuaUvb1xz8wuC6SLRXRa2kUPkAVajsuzy8ubHVx": "action_listen",
+    "eJwtysEJgDAMQNFVMoATdBWR0GqkAZtImnop3d2C3v6Dv/axQL+NHoy7s0qA/gVKLBTgx8XVSebbKtl8WCY9AMupGJM2x2TqmSyrHmNsL/sCIpM=": "utter_info_about_brotherhood",
+    "eJyNjUEKgDAMBL/SB/iCfkUktBppQBNJUy+lf7egV9HbDszujrUNrh6KJ4TZSNi7egfgsKN3D2yUDbm7JaN2h7ijeUe8CoQoxSCqWEJNIkv7GC1mqPDS/f0xXRh+ScE=": "utter_options_for_more_info",
+    "eJytjUsOhDAMQ6/SA8wJepXRKCpDEJUgRmnKpuLulM8WwYKdbdl+37J8XJmUZwp/ixDvyiFIwsjenWaIyVhqNyfW2olSrXkXpQOFBtmoUVjP2gPtcnOazVjpYvsqA9MWJeqgNEJ5hz5H/FYYkHCZ": "action_listen",
+    "eJwtysEJgDAMQNFVMoATdBWREiWFgE1Kk3op3d2A3v6Ht8+1wWydnoyXs0qC+UUWrJTgn5vNScIOox6GJdYTsBTNeOrw3LoWMguNoetaxwuKCiRR": "utter_info_about_professionalism",
+    "eJyVjUEKgDAMBL/SB/iCfkUkREkhoElpUy+lfzegZ8XbDszuzn1MoedCJ+BmrBJDvwMIHhTDAztXI3G3VSrusDhaDCxJAVdtBrloolrdRreP8THczKjAS//X13IByh5O+w==": "utter_options_for_more_info",
+    "eJytjUEKwzAMBL/iB/QF/koowi0yGGLJSHIuxn+v2uacEMhNK2Z3ljEfYTTBDdLbClMM438ApYox7GEtakjOdkVxppBHi6FQZkgv7gZNOKOq08npOk+GuxkKHPRvd3H7vhQyC1QW/MmvaZ4fq9N3kQ==": "action_listen"
+  }
+}

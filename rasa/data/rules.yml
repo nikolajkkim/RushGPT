@@ -22,6 +22,16 @@ rules:
   - intent: general_info_about_theta_tau
   - action: utter_general_info_about_theta_tau
 
+- rule: follow brotherhood information with more options
+  steps:
+  - action: utter_info_about_brotherhood
+  - action: utter_options_for_more_info
+
+- rule: follow professionalism information with more options
+  steps:
+  - action: utter_info_about_professionalism
+  - action: utter_options_for_more_info
+
 # - rule: Introduce rush week
 #   steps:
 #   - intent: general_info_about_rush_week
@@ -36,16 +46,6 @@ rules:
 #   steps:
 #   - intent: rush_week_location
 #   - action: utter_rush_week_location
-
-# - rule: Give more info on brotherhood
-#   steps:
-#   - intent: info_about_brotherhood
-#   - action: utter_info_about_brotherhood
-  
-# - rule: Give more info on professionalism
-#   steps:
-#   - intent: info_about_professionalism
-#   - action: utter_info_about_professionalism
 
 # - rule: Give more info on service
 #   steps:

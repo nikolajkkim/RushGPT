@@ -1,6 +1,6 @@
 version: "3.1"
 
-stories:
+stories: 
 - story: intro information of tt
   steps:
   - intent: greet
@@ -8,6 +8,17 @@ stories:
   - intent: affirm
   - action: utter_general_info_about_theta_tau
 
+- story: offer more options after explaining brotherhood
+  steps:
+  - intent: info_about_brotherhood
+  - action: utter_info_about_brotherhood
+  - action: utter_options_for_more_info
+
+- story: offer more options after explaining professionalism
+  steps:
+  - intent: info_about_professionalism
+  - action: utter_info_about_professionalism
+  - action: utter_options_for_more_info
 
 # - story: very general information about tt
 #   steps:

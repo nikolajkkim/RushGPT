@@ -88,21 +88,25 @@ nlu:
 #     - "Where is rush?"
 #     - "Where is the event?"
 
-# - intent: info_about_brotherhood
-#   examples: |
-#     - "Can you tell me more about brotherhood?"
-#     - "What do you guys do socially?"
-#     - "What does brotherhood mean to you guys?"
-#     - "What do the brothers do together?"
-#     - "What do you guys do for fun?"
+- intent: info_about_brotherhood
+  examples: |
+    - "Can you tell me more about brotherhood?"
+    - "Tell me about brotherhood"
+    - "What do you guys do socially?"
+    - "What does brotherhood mean to you guys?"
+    - "What do the brothers do together?"
+    - "What do you guys do for fun?"
+    - "Brotherhood"
+    - "What is brotherhood?"
 
-# - intent: info_about_professionalism
-#   examples: |
-#     - "Can you tell me more about professionalism?"
-#     - "What do you guys do professionally?
-#     - "Do you guys get internships?"
-#     - "Tell me about the professional pillar"
-#     - "Are you guys super professional?"
+- intent: info_about_professionalism
+  examples: |
+    - "Can you tell me more about professionalism?"
+    - "What do you guys do professionally?
+    - "Tell me about the professional pillar"
+    - "Are you guys super professional?"
+    - "Professionalism"
+    - "Professional"
 
 # - intent: info_about_service
 #   examples: |
