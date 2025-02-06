@@ -20,6 +20,36 @@ stories:
   - action: utter_info_about_professionalism
   - action: utter_options_for_more_info
 
+- story: offer more options after explaining service
+  steps:
+  - intent: info_about_service
+  - action: utter_info_about_service
+  - action: utter_options_for_more_info
+
+- story: offer more options after explaining rush week
+  steps:
+  - intent: general_info_about_rush_week
+  - action: utter_general_info_about_rush_week
+  - action: utter_options_for_more_info
+
+- story: offer more options after explaining pledge
+  steps:
+  - intent: pledge_question
+  - action: utter_pledge_answer
+  - action: utter_options_for_more_info
+
+- story: offer more options after explaining hazing
+  steps:
+  - intent: haze_question
+  - action: utter_haze_answer
+  - action: utter_options_for_more_info
+
+- story: offer more options after explaining illicit activities
+  steps:
+  - intent: illicit_activity_question
+  - action: utter_illicit_activity_answer
+  - action: utter_options_for_more_info
+
 # - story: very general information about tt
 #   steps:
 #   - intent: greet
@@ -59,3 +89,20 @@ stories:
 #   - action: utter_options_for_more_info
 #   - intent: info_about_brotherhood
 #   - action: utter_info_about_brotherhood
+- story: interactive_story_1
+  steps:
+  - intent: greet
+    entities:
+    - name: nikolaj
+  - slot_was_set:
+    - name: nikolaj
+  - action: utter_greet_response
+  - intent: affirm
+  - action: utter_general_info_about_theta_tau
+  - intent: info_about_brotherhood
+  - action: utter_info_about_brotherhood
+  - action: utter_options_for_more_info
+  - intent: info_about_professionalism
+  - action: utter_info_about_professionalism
+  - action: utter_options_for_more_info
+  - intent: affirm

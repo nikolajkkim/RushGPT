@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -13,7 +12,8 @@ nlu:
     - goodmorning
     - good afternoon
     - hi, my name is [nikolaj](name)
-
+    - hi there! my name's [nikolaj](name)
+    - hi rushbot
 - intent: goodbye
   examples: |
     - cu
@@ -26,7 +26,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -35,7 +34,7 @@ nlu:
     - of course
     - that sounds good
     - correct
-
+    - Sure
 - intent: deny
   examples: |
     - no
@@ -45,14 +44,12 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: general_info_about_theta_tau
   examples: |
     - "What do you guys do?"
@@ -60,34 +57,6 @@ nlu:
     - "What's the mission of Theta Tau?"
     - "What is your fraternity about?"
     - "What is Theta Tau about?"
-
-# - intent: wants_to_know_more_about_theta_tau
-#   examples: |
-#     - "Can you tell me more about theta tau?"
-#     - "What are some of the pillars?"
-#     - "Tell me more about the pillars"
-
-# - intent: general_info_about_rush_week
-#   examples: |
-#     - "What is rush"
-#     - "What events do you have?"
-#     - "What events will there be?"
-
-# - intent: rush_week_timing
-#   examples: |
-#     - "When is rush week?"
-#     - "When is rush?"
-#     - "What time is rush?"
-#     - "What time is the event?"
-#     - "What time does rush end?"
-#     - "What time does the event end?"
-
-# - intent: rush_week_location
-#   examples: |
-#     - "Where is rush week?"
-#     - "Where is rush?"
-#     - "Where is the event?"
-
 - intent: info_about_brotherhood
   examples: |
     - "Can you tell me more about brotherhood?"
@@ -98,7 +67,7 @@ nlu:
     - "What do you guys do for fun?"
     - "Brotherhood"
     - "What is brotherhood?"
-
+    - tell me about brotherhood
 - intent: info_about_professionalism
   examples: |
     - "Can you tell me more about professionalism?"
@@ -107,27 +76,47 @@ nlu:
     - "Are you guys super professional?"
     - "Professionalism"
     - "Professional"
-
-# - intent: info_about_service
-#   examples: |
-#     - "Can you tell me more about service?"
-#     - "What do you guys do for service?
-#     - "Do you guys do service events"
-#     - "Tell me about the service pillar"
-#     - "Do you guys do like beach clean ups and stuff?"
-#     - "How do you guys give back to the community?"
-#     - "How do you guys help the community?"
-
-# - intent: shares_major
-#   examples: |
-#     - [Computer Science](user_major)
-#     - [Electrical Engineering](user_major)
-#     - [Mechanical Engineering](user_major)
-#     - [Civil Engineering](user_major)
-#     - [Data Science](user_major)
-#     - [Engineering](user_major)
-#     - I'm studying [Electrical Engineering](user_major)
-#     - My major is [Mechanical Engineering](user_major)
-#     - I'm a [Computer Science](user_major) major
-#     - I study [Computer Science](user_major) 
-
+    - How about professionalism?
+- intent: info_about_service
+  examples: |
+    - "Can you tell me more about service?"
+    - "What do you guys do for service?
+    - "Do you guys do service events"
+    - "Tell me about the service pillar"
+    - "Do you guys do like beach clean ups and stuff?"
+    - "How do you guys give back to the community?"
+    - "How do you guys help the community?"
+    - "Service"
+    - "What is service?"
+- intent: general_info_about_rush_week
+  examples: |
+    - "What is rush"
+    - "What events will there be at rush?"
+    - "Rush"
+    - "Rush week"
+    - "How does rush work?"
+- intent: pledge_question
+  examples: |
+    - "What's pledge?"
+    - "I heard you guys have a pledge."
+    - "Do you guys have pledges?"
+    - "Is there a pledge process?"
+    - "What kind of pledge do you guys have?"
+    - "Pledges"
+- intent: haze_question
+  examples: |
+    - "Do you guys haze?"
+    - "I heard you guys haze"
+    - "Is there hazing?"
+    - "Haze"
+- intent: illicit_activity_question
+  examples: |
+    - "Do you guys drink?"
+    - "Is there drinking?"
+    - "Alcohol consumption"
+    - "Do you guys smoke weed?"
+    - "Do people smoke?"
+    - "Do people like to rave?"
+    - "Do you guys go to raves together?"
+    - "How often do you guys party?"
+    - "Do you guys host parties?"

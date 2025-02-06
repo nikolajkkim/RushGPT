@@ -1,0 +1,66 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "back": 1,
+        "bot_challenge": 2,
+        "deny": 3,
+        "general_info_about_rush_week": 4,
+        "general_info_about_theta_tau": 5,
+        "goodbye": 6,
+        "greet": 7,
+        "haze_question": 8,
+        "illicit_activity_question": 9,
+        "info_about_brotherhood": 10,
+        "info_about_professionalism": 11,
+        "info_about_service": 12,
+        "nlu_fallback": 13,
+        "out_of_scope": 14,
+        "pledge_question": 15,
+        "restart": 16,
+        "session_start": 17
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_info_about_brotherhood": 13,
+        "utter_greet_response": 14,
+        "utter_options_for_more_info": 15,
+        "utter_info_about_professionalism": 16,
+        "utter_general_info_about_theta_tau": 17,
+        "utter_general_info_about_rush_week": 18,
+        "utter_goodbye": 19,
+        "utter_haze_answer": 20,
+        "utter_iamabot": 21,
+        "utter_illicit_activity_answer": 22,
+        "utter_info_about_service": 23,
+        "utter_pledge_answer": 24
+      },
+      "entities": {
+        "name": 0,
+        "user_major": 1
+      },
+      "slots": {
+        "user_major_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

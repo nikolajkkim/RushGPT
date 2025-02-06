@@ -32,6 +32,31 @@ rules:
   - action: utter_info_about_professionalism
   - action: utter_options_for_more_info
 
+- rule: follow service information with more options
+  steps:
+  - action: utter_info_about_service
+  - action: utter_options_for_more_info
+
+- rule: follow rush week information with more options
+  steps:
+  - action: utter_general_info_about_rush_week
+  - action: utter_options_for_more_info
+
+- rule: follow pledge information with more options
+  steps:
+  - action: utter_pledge_answer
+  - action: utter_options_for_more_info
+
+- rule: follow haze information with more options
+  steps:
+  - action: utter_haze_answer
+  - action: utter_options_for_more_info
+
+- rule: follow illicit acitivites information with more options
+  steps:
+  - action: utter_illicit_activity_answer
+  - action: utter_options_for_more_info
+
 # - rule: Introduce rush week
 #   steps:
 #   - intent: general_info_about_rush_week
