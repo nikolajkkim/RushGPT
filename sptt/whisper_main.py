@@ -10,7 +10,7 @@ def record_audio_rpi(output_file="audio.wav", duration=5):
     Record audio on Raspberry Pi using arecord.
     """
     print("Recording on Raspberry Pi... Speak now.")
-    command = f"arecord -D plughw:1,0 -f cd -t wav -d {duration} -r 16000 {output_file}"
+    command = f"arecord -D plughw:3,0 -f cd -t wav -d {duration} -r 16000 {output_file}"
     subprocess.run(command, shell=True, check=True)
     print(f"Audio saved to {output_file}")
 
