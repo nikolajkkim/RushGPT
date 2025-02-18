@@ -57,6 +57,7 @@ nlu:
     - "What's the mission of Theta Tau?"
     - "What is your fraternity about?"
     - "What is Theta Tau about?"
+    - "Tell me about Theta Tau"
 - intent: info_about_brotherhood
   examples: |
     - "Can you tell me more about brotherhood?"
