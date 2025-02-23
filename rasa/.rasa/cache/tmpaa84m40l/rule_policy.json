@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet_response",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet_response\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_haze_answer\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_haze_answer\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_info_about_service\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_info_about_service\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_info_about_theta_tau\"}}]": "utter_general_info_about_theta_tau",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_info_about_theta_tau\"}}, {\"prev_action\": {\"action_name\": \"utter_general_info_about_theta_tau\"}, \"user\": {\"intent\": \"general_info_about_theta_tau\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_info_about_brotherhood\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_info_about_brotherhood\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_info_about_professionalism\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_info_about_professionalism\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_pledge_answer\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_pledge_answer\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_general_info_about_rush_week\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_general_info_about_rush_week\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"utter_illicit_activity_answer\"}}]": "utter_options_for_more_info",
+      "[{\"prev_action\": {\"action_name\": \"utter_illicit_activity_answer\"}}, {\"prev_action\": {\"action_name\": \"utter_options_for_more_info\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_info_about_theta_tau\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_info_about_theta_tau\"}}, {\"prev_action\": {\"action_name\": \"utter_general_info_about_theta_tau\"}, \"user\": {\"intent\": \"general_info_about_theta_tau\"}}]"
+    ]
+  }
+}

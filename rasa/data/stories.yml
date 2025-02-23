@@ -50,6 +50,45 @@ stories:
   - action: utter_illicit_activity_answer
   - action: utter_options_for_more_info
 
+- story: offer more options after answering percentage of acceptance
+  steps:
+  - intent: acceptance_percentage_question
+  - intent: utter_acceptance_percentage_question
+  - intent: utter_more_optinos_for_more_info
+
+- story: offer more options after answering how to get in question
+  steps:
+  - intent: how_to_get_in_question
+  - intent: utter_how_to_get_in_question
+  - intent: utter_more_optinos_for_more_info
+
+- story: offer more options after answering who to contact question
+  steps:
+  - intent: who_to_contact_question
+  - intent: utter_who_to_contact_question
+  - intent: utter_more_optinos_for_more_info
+
+- story: offer more options after answering social media in question
+  steps:
+  - intent: social_media_question
+  - intent: utter_social_media_question
+  - intent: utter_more_optinos_for_more_info
+
+- story: offer more options after answering costs question
+  steps:
+  - intent: costs_question
+  - intent: utter_costs_question
+  - intent: utter_more_optinos_for_more_info
+
+- story: offer more options after allowed majors question
+  steps:
+  - intent: accepted_majors_question
+  - intent: utter_accepted_majors_question
+  - intent: utter_more_optinos_for_more_info
+
+
+
+
 # - story: very general information about tt
 #   steps:
 #   - intent: greet

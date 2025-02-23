@@ -121,3 +121,38 @@ nlu:
     - "Do you guys go to raves together?"
     - "How often do you guys party?"
     - "Do you guys host parties?"
+- intent: acceptance_percentage_question
+  examples: |
+    - "What's the percentage of acceptance?"
+    - "How many people get in every year?"
+    - "What are the chances that I get in?"
+    - "How likely is it for me to get a bid?"
+- intent: how_to_get_in_question
+  examples: |
+    - "How do I get in?"
+    - "What's the secrete to getting a bid?"
+    - "What should I do to get accepted?"
+    - "How can I ensure that I am accepted?"
+- intent: who_to_contact_question
+  examples: |
+    - "Who should I contact if I have any more questions?"
+    - "Who is the organizer of rush?"
+    - "Are there any other people I should talk to about rush?"
+- intent: social_media_question
+  examples: |
+    - "Do you guys have any social media"
+    - "Do you guys have an instagram"
+    - "Do you guys have a website"
+    - "Do you guys have a tiktok"
+- intent: costs_question
+  examples: |
+    - "How much do you have to pay to join"
+    - "How much does pledging cost?"
+    - "How much do you pay as an active?"
+    - "Is being in Theta Tau expensive?"
+- intent: accepted_majors_question
+  examples: |
+    - "What majors are allowed to join"
+    - "What majors are accepted"
+    - "Am I allowed to join as a undeclared major"
+    - "Are Civil Engineers allowed to join?"

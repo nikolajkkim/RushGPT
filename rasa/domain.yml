@@ -13,6 +13,12 @@ intents:
 - pledge_question
 - haze_question
 - illicit_activity_question
+- acceptance_percentage_question
+- how_to_get_in_question
+- who_to_contact_question
+- social_media_question
+- costs_question
+- accepted_majors_question
 entities:
 - name
 - user_major
@@ -43,58 +49,42 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_general_info_about_theta_tau:
-  - text: "Theta Tau is the premier professional engineering fraternity at UCI. Our three pillars are brotherhood, 
-  professionalism, and service. I would be happy to tell you more about Theta Tau. If you would like, please ask 
-  to learn more about one of our pillars: Brotherhood, Professionalism, or Service."
-  - text: "We're a professional fraternity that helps students develop leadership skills, connect with fellow engineers, 
-  and create long lasting friendships. I would be happy to tell you more about Theta Tau. If you would like, please ask 
-  to learn more about one of our pillars: Brotherhood, Professionalism, or Service."
-  - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of service, 
-  professionalism, and brotherhood. I would be happy to tell you more about Theta Tau. If you would like, please ask to 
-  learn more about one of our pillars: Brotherhood, Professionalism, or Service."
+  - text: "Theta Tau is the premier professional engineering fraternity at UCI. Our three pillars are brotherhood, professionalism, and service. I would be happy to tell you more about Theta Tau. If you would like, please ask to learn more about one of our pillars: Brotherhood, Professionalism, or Service."
+  - text: "We're a professional fraternity that helps students develop leadership skills, connect with fellow engineers, and create long lasting friendships. I would be happy to tell you more about Theta Tau. If you would like, please ask to learn more about one of our pillars: Brotherhood, Professionalism, or Service."
+  - text: "Theta Tau is dedicated to building strong, professional engineers through a combination of service, professionalism, and brotherhood. I would be happy to tell you more about Theta Tau. If you would like, please ask to learn more about one of our pillars: Brotherhood, Professionalism, or Service."
   utter_options_for_more_info:
-  - text: "Would you like to learn anything else about Theta Tau? I can talk to you about brotherhood, professionalism, 
-  service, rush week, or do my best to answer any other questions you might have. "
+  - text: "Would you like to learn anything else about Theta Tau? I can talk to you about brotherhood, professionalism, service, rush week, or do my best to answer any other questions you might have. "
   utter_info_about_brotherhood:
-  - text: "Our chapter takes pride in the close bond between our brothers. From seasonal retreats and mixers to regionals 
-  with brothers from all over the state and nation, we make sure to take time to relax and connect with each other."
-  - text: "Our brothers love spending time with each other. Every day there is some group of brothers just hanging out or 
-  studying together."
-  - text: "We really bond with each other and do all kinds of fun things. It's everything from big official events like 
-  retreat or mixers with other chapters or clubs, to little things like study sessions, sports days, or cookouts."
+  - text: "Our chapter takes pride in the close bond between our brothers. From seasonal retreats and mixers to regionals with brothers from all over the state and nation, we make sure to take time to relax and connect with each other."
+  - text: "Our brothers love spending time with each other. Every day there is some group of brothers just hanging out or studying together."
+  - text: "We really bond with each other and do all kinds of fun things. It's everything from big official events like retreat or mixers with other chapters or clubs, to little things like study sessions, sports days, or cookouts."
   utter_info_about_professionalism:
-  - text: "We hope to help our brothers develop into engineers with strong communication, problem-solving, and leadership 
-  skills that we demonstrate in our work and our community. Whether building up professional basics or guiding each other 
-  through the job hunt, our chapter is a community of like-minded individuals preparing each other for the professional world."
-  - text: "We really thrive on helping each other grow. By always working to improve on our skills and surrounding ourselves 
-  with like minded, talented individuals, we are able to develop in all kinds of areas."
-  - text: "We love helping each other develop professionally. This is done through all kinds of ways which includes resume, 
-  linkedin, or mock interview workshops that we host within our club. Another thing we enjoy doing is preparing for career 
-  fair days together, making sure we are all ready to go the next day."
+  - text: "We hope to help our brothers develop into engineers with strong communication, problem-solving, and leadership skills that we demonstrate in our work and our community. Whether building up professional basics or guiding each other through the job hunt, our chapter is a community of like-minded individuals preparing each other for the professional world."
+  - text: "We really thrive on helping each other grow. By always working to improve on our skills and surrounding ourselves with like minded, talented individuals, we are able to develop in all kinds of areas."
+  - text: "We love helping each other develop professionally. This is done through all kinds of ways which includes resume, linkedin, or mock interview workshops that we host within our club. Another thing we enjoy doing is preparing for career fair days together, making sure we are all ready to go the next day."
   utter_info_about_service:
-  - text: "We believe that giving back to the community is an integral part of becoming well rounded people. From taking 
-  on a rich array of community service projects or using our lessons learned to guide the next generation of students 
-  interested in STEM, we're always looking for a way to give back to the community."
-  - text: "We are very committed to giving back to the community. This includes things like gardening events, 
-  beach clean ups, volunteering at the food pantry, and more. One highlight event that we always love doing is our 
-  high school outreach event. This is when we visit a high school oftentimes with limited exposure to STEM and speak with 
-  students who may have an interest in the field. It's a really exciting event where we can help new and aspiring students to 
-  feel excited about the thigns that we study."
+  - text: "We believe that giving back to the community is an integral part of becoming well rounded people. From taking on a rich array of community service projects or using our lessons learned to guide the next generation of students interested in STEM, we're always looking for a way to give back to the community."
+  - text: "We are very committed to giving back to the community. This includes things like gardening events, beach clean ups, volunteering at the food pantry, and more. One highlight event that we always love doing is our high school outreach event. This is when we visit a high school oftentimes with limited exposure to STEM and speak with students who may have an interest in the field. It's a really exciting event where we can help new and aspiring students to feel excited about the thigns that we study."
   utter_general_info_about_rush_week:
-  - text: "Rush Week is our recruitment period, where you can attend events, ask questions, and learn more about Theta Tau 
-  to see if it's the right fit for you. We'll have an information session, a fun engineering challenge, and a professional 
-  development night. Rush Week takes place during Week 1 of Spring quarter from 5-7pm. We also have after hours that run on 
-  till later hours of the night. However, nothing is mandatory. It is just an opportunity to get to know more about the 
-  fraternity and our brothers. Rush will take place at your mom's house. "
+  - text: "Rush Week is our recruitment period, where you can attend events, ask questions, and learn more about Theta Tau to see if it's the right fit for you. We'll have an information session, a fun engineering challenge, and a professional development night. Rush Week takes place during Week 1 of Spring quarter from 5-7pm. We also have after hours that run on till later hours of the night. However, nothing is mandatory. It is just an opportunity to get to know more about the fraternity and our brothers. Rush will take place somewhere near the Engineerin Quad. More details will come soon.. "
   utter_pledge_answer:
-  - text: "Pledge is a quarter long commitment equivalent to a 4 unit lab where we aim to help grow our potential new members 
-  professionally, while also helping them get to know the active body. "
+  - text: "Pledge is a quarter long commitment equivalent to a 4 unit lab where we aim to help grow our potential new members professionally, while also helping them get to know the active body. "
   utter_haze_answer:
-  - text: "No, we dont haze, were a professional organization. idiot."
+  - text: "No, we dont haze, were a professional organization."
   utter_illicit_activity_answer:
-  - text: "We dont partake in activities like that as an organization, but some members who are of age do that stuff outside of the 
-  frat like kasa eck."
-
+  - text: "We dont partake in activities like that as an organization, but some members who are of age may do things on their own time."
+  utter_acceptance_percentage_question:
+  - text: "The number of bids that are given out each quarter always depend on the quarter. We don't have any specific numbers to provide as it always depends on the people"
+  utter_how_to_get_in_question:
+  - text: "There is no secret formula to getting a bid. All that matters is that you be yourself and have fun getting to know people at rush."
+  utter_who_to_contact_question:
+  - text: "Our rush is managed by our Rush Chairs, Miguel Murillo and Ellen So. You can find their contacts on our instagram @thetatauuci or on our website thetatauuci dot com"
+  utter_social_media_question:
+  - text: "You can find us on instagram @thetatauuci. Our website is thetatauuci dot com. We also have a tik tok and linkedin account with the same handles."
+  utter_costs_question:
+  - text: "Our cost is a lot less than social fraternities. It is around 200 dollars biannually which are due in the fall and spring."
+  utter_accepted_majors_question:
+  - text: "We accept all engineering majors including undeclared, computer science, and data science."
 
 session_config:
   session_expiration_time: 60
@@ -110,19 +100,18 @@ actions:
 
 
 
-# how do i get in? "just come out to rush and be yourself and, theres no secret formula to getting in, just be yourself"
-# whats the percentage? "it depends on the rush every year. we dont have a number to provide but it depnds oin the peoples"
+# DONE how do i get in? "just come out to rush and be yourself and, theres no secret formula to getting in, just be yourself"
+# DONE whats the percentage? "it depends on the rush every year. we dont have a number to provide but it depnds oin the peoples"
 
 # questions: are you sure?, who made you? how do i get in? how do i get a big? "what do people do in theta tau"
 # "how do you improve those professional skills"
-# "does theta tau participate in hazing" "how long is rush week"
 # "is it better to attend all days of rush week"
 # "what happens on each day of rush week" - go into depth about each day and what we do
 # "what time? how late do after hours go?"
 # "what do brothres do?"
 # " what is an active? what is a brother? what is a rushee? what is a pledge?"
-# "who should i contact if i have any questions"
-# "what are your social medias"
+# DONE "who should i contact if i have any questions"
+# DONE "what are your social medias"
 # "what is the best way to stay updated on theta tau or rush information"
 # *redirect people to brothers if bot doesnt know what to say
 # "what is a fraternity"
@@ -131,7 +120,7 @@ actions:
 # "wil there be transportaiont to other events"
 # "how will we be notified about invites?"
 # "do you guys hold funraisers"
-# "how much does it cost"
+# DONE "how much does it cost"
 # "can you be in multiple frats/clubs at the same time"
 # "how time intensive is it as an active"
 # "can you repeat that"
@@ -141,7 +130,7 @@ actions:
 # "does talking to more actives increase my chances to get in"
 # "how many actives are tehre"
 # "alumni network question"
-# "how many of this (major) are there"
+# DONE "how many of this (major) are there"
 # "what if im late to an event"
 # "what is board, what doo you do on board, who are they"
 # errors: tell me more about TT -> intent is bhood but should be something like "Waht would you like to leanr about tt?"
