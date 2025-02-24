@@ -1,5 +1,7 @@
 import warnings
 from sptt import *
+from rasa.rasa_speak import get_rasa_response
+from TTS.piper_speak import text_to_speech
 
 
 def main_loop():
@@ -32,6 +34,15 @@ def main_loop():
 
         # Wake word detected, record question and transcribe
         transcribed_question = whisper_speech_to_text(whisper_model, mic, 5)
+
+        rasa_response = get_rasa_response(transcribed_question)
+
+        if rasa_response:
+            print(f"Rasa Response: {rasa_response}")
+
+            # text_to_speech(rasa_response)
+
+
 
 
 if __name__ == "__main__":

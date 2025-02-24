@@ -10,10 +10,16 @@ def get_rasa_response(message):
     response = requests.post(url, json=payload, headers=headers)
 
     if response.status_code == 200:
-        return response.json()[0]["text"]
+        response_json = response.json()
+        if response_json:  # Check if the list is not empty
+            return response_json[0]["text"]
+        else:
+            print("Warning: No response from Rasa.")
+            return None
     else:
-        print("Error: Unable to get response from Rasa.")
+        print("Error: Unable to get response from Rasa. Status code:", response.status_code)
         return None
+
 
 
 if __name__ == "__main__":
